@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Jquery</title>
+</head>
+<body>
+    <h1>Kemana Kamu ingin pergi?</h1>
+    <ul class="lokasi">
+        <li>
+            <div>
+                <h4>wamena</h4>
+                <img id="gambar" src="107388_f.jpg" alt="naruto" width="100px">
+            </div>
+        </li>
+        <li >Jayapura
+            <ol>
+                <li>expo</li>
+                <li>waena</li>
+                <li>king city</li>
+            </ol>
+        </li>'l'
+        <li id="sorong">Sorong</li>
+        <li>
+            <input type="number" value="90">
+        </li>
+    </ul>
+    <button>Aksi</button>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function (){
+        //inisialisai
+
+         var jogja = $('<li>Yogyakarta</li>');
+         var bali = $('<li>Bali</li>');
+         var meroke = $('<li>Merauke</li>');
+
+        //menambahkan element
+        $('.lokasi').prepend(jogja);
+        $('.lokasi').append(bali);
+       
+
+        //merubah element
+        $('button').click(function(){
+           $('#sorong').html(meroke);
+        })
+
+        $('#gambar').attr('src', 'https://tse3.mm.bing.net/th?id=OIP.c26rZ2WDy5ugbKw_NCCHCQHaFj&pid=Api&P=0&h=180');
+        $('#gambar').attr('alt', 'batu');
+        $('#gambar').attr('alt', 'batu');
+
+        console.log($('input').val(540));
+
+        //menghapus atribut
+        $('#inputText').removeAttr('disabled'); // Menghapus atribut 'disabled'
+    
+
+
+
+        });
+
+        
+
+      
+
+      
+
+    </script>
+</body>
+</html>
