@@ -8,13 +8,20 @@
 <body>
     <h1>Kemana Kamu ingin pergi?</h1>
     <ul class="lokasi">
+        <li class="manokwari">
+            Manokwari
+        </li>
+        <li class="nbx">
+            nabire
+        </li>
+        
         <li>
             <div>
                 <h4>wamena</h4>
                 <img id="gambar" src="107388_f.jpg" alt="naruto" width="100px">
             </div>
         </li>
-        <li >Jayapura
+        <li class="jprx" >Jayapura
             <ol>
                 <li>expo</li>
                 <li>waena</li>
@@ -41,6 +48,7 @@
         //menambahkan element
         $('.lokasi').prepend(jogja);
         $('.lokasi').append(bali);
+        $('.jprx ol').append(bali)
        
 
         //merubah element
@@ -56,6 +64,9 @@
 
         //menghapus atribut
         $('#inputText').removeAttr('disabled'); // Menghapus atribut 'disabled'
+        $('.manokwari').remove()
+        $('.nbx').empty()
+
     
 
 
