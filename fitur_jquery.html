@@ -12,15 +12,24 @@
         <li class="bandung">
             Bandung
             <button class="go">go</button>
+            <button class="hide">H</button>
             <button class="batal">x</button>
         </li>
-        <li>Jayapura</li>
-        <li>Sorong</li>
+        <li class="bandung">Jayapura
+            <button class="go">go</button>
+            <button class="fadeOut">H</button>
+            <button class="batal">x</button>
+        </li>
+        <li class="bandung">Sorong
+            <button class="go">go</button>
+            <button class="animate">H</button>
+            <button class="batal">x</button>
+        </li>
     </ul>
 
-    <h1>event handler</h1>
+    <h1>fitur fitur jquery </h1>
     <div>
-        <img src="Screenshot 2024-11-29 040614.png" alt="">
+        <img src="dua.png" alt="">
     </div>
     <button>Aksi</button>
 
@@ -40,7 +49,26 @@
                alert('bandung dihapus')
                 
             })
+
+            // fitur evect
+
+            $('.hide').on('click',function(){
+                $('.bandung').hide();
+            })
+
+            $('.fadeOut').on('click',function(){
+                $('.bandung').fadeOut();
+            });
+
+            $('.animate').on('click',function(){
+                $('.bandung').animate({
+                    marginLeft : 200
+                })
+            })
+
         });
+
+
    
 
         

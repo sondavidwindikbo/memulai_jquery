@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Jquery</title>
+    <style>
+        .merah{
+            color: red;
+        }
+
+        .biru{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Kemana Kamu ingin pergi?</h1>
+
+    <ul>
+        <li class="bandung">
+            Bandung
+            
+           
+        </li>
+        <li class="jayaura">Jayapura
+            
+            
+        </li>
+        <li class="sorong">Sorong
+           
+        </li>
+    </ul>
+
+    <h1>fitur fitur jquery </h1>
+    <div>
+        <img src="dua.png" alt="">
+    </div>
+    <button id="aksi">Aksi</button> 
+    <button id="red">red</button> 
+    <button id="big">jadi besar</button> 
+    <button id="slide">Slide down</button> 
+
+    <h1></h1>
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+              // manupulasi css
+              //css di jquery seperti menulis object
+              
+        $(document).ready(function() {  
+          
+            $('#aksi').on('click',function(){
+                $('.bandung').removeClass('merah');
+                $('.bandung').addClass('biru');
+            })
+
+              $('#red').on('click',function(){
+                $('.bandung').removeClass('biru');
+                $('.bandung').addClass('merah');
+            })
+
+            
+            $('#big').on('click',function(){
+                $('.bandung').animate({
+                    fontSize :200
+                })
+                $('.bandung').animate({
+                    fontSize :100
+                })
+            })
+
+            $('#slide').on('click', function(){
+                $('.bandung').slideUp(2000)
+            })
+           
+        });
+
+
+   
+
+        
+
+      
+
+      
+
+    </script>
+</body>
+</html>
